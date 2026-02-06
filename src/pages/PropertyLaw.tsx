@@ -59,7 +59,7 @@ const PropertyLaw = () => {
                         {
                             title: "Residential Conveyancing",
                             desc: "Seamless legal management of buying or selling your home. Speed, clarity, and security guaranteed.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Buying or selling a home is one of the most significant transactions you will make. We streamline the conveyancing process, handling searches, contracts, and transfer of funds with absolute precision.</p>
@@ -70,7 +70,7 @@ const PropertyLaw = () => {
                         {
                             title: "Commercial Leases & Sales",
                             desc: "Expert drafting and negotiation for commercial landlords and tenants. Protecting your business interests.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Commercial property law requires a sharp commercial mindset. We act for both landlords and tenants in drafting, negotiating, and renewing commercial leases.</p>
@@ -81,7 +81,7 @@ const PropertyLaw = () => {
                         {
                             title: "Property Development",
                             desc: "Strategic legal support for developers. From site acquisition to plot sales and planning agreements.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">We partner with developers to bring projects to life. Our services cover the full lifecycle of a development, from initial site acquisition and option agreements to infrastructure agreements and final plot sales.</p>
@@ -92,7 +92,7 @@ const PropertyLaw = () => {
                         {
                             title: "Landlord & Tenant Disputes",
                             desc: "Resolving conflicts over rent, repairs, and possession with decisive legal action.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Disputes between landlords and tenants can disrupt lives and businesses. We provide robust representation in matters involving rent arrears, dilapidations, breach of covenant, and possession proceedings.</p>
@@ -103,7 +103,7 @@ const PropertyLaw = () => {
                         {
                             title: "Re-mortgaging & Transfers",
                             desc: "Efficient handling of equity transfers and re-financing to release capital or restructure ownership.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Changing lenders or altering property ownership requires swift legal intervention to satisfy all parties. We manage the technicalities of re-mortgaging and transfers of equity seamlessly.</p>
@@ -114,7 +114,7 @@ const PropertyLaw = () => {
                         {
                             title: "Boundary & Right of Way Disputes",
                             desc: "Clarifying rights and resolving neighbour disputes over land usage and boundaries.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Disputes over boundaries or rights of way can be incredibly contentious. We meticulously analyze title deeds and historical plans to establish the true legal position.</p>

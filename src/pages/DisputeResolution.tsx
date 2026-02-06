@@ -59,7 +59,7 @@ const DisputeResolution = () => {
                         {
                             title: "Commercial Litigation",
                             desc: "High-stakes dispute resolution for businesses, including breach of contract and partnership disputes.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Business disputes demand a commercial approach. We represent companies in high-stakes litigation, identifying the fastest route to a favourable outcome while minimizing disruption to operations.</p>
@@ -70,7 +70,7 @@ const DisputeResolution = () => {
                         {
                             title: "Professional Negligence",
                             desc: "Recovering losses caused by the sub-standard advice of other professionals, including architects and accountants.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">When a professional advisor fails in their duty of care, the financial consequences can be severe. We hold solicitors, accountants, architects, and surveyors accountable for their negligence.</p>
@@ -81,7 +81,7 @@ const DisputeResolution = () => {
                         {
                             title: "Contract Disputes",
                             desc: "Enforcing contractual rights and defending against claims of breach.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Contracts are the backbone of commerce. If a supplier has failed to deliver, or a customer refuses to pay, we take decisive action to enforce the terms of your agreement.</p>
@@ -92,7 +92,7 @@ const DisputeResolution = () => {
                         {
                             title: "Mediation & ADR",
                             desc: "Alternative Dispute Resolution strategies to settle conflicts without the cost of court.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Court is not always the best answer. We are strong advocates for Mediation and Alternative Dispute Resolution (ADR), which can save you significant time and money.</p>
@@ -103,7 +103,7 @@ const DisputeResolution = () => {
                         {
                             title: "Debt Recovery",
                             desc: "Fast, effective action to recover unpaid monies and improve your cash flow.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Cash flow is critical. We provide a swift debt recovery service, issuing formal demands and, where necessary, statutory demands and winding-up petitions.</p>
@@ -114,7 +114,7 @@ const DisputeResolution = () => {
                         {
                             title: "Employment Disputes",
                             desc: "Protecting your rights in the workplace, from unfair dismissal to discrimination claims.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Workplace disputes can be stressful and damaging. We advise both employers and employees on settlement agreements, unfair dismissal, and discrimination claims.</p>

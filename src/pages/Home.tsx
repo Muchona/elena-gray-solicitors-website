@@ -163,7 +163,7 @@ const Home = () => {
                     <div className="reveal-item order-2 lg:order-1 relative">
                         <div className="absolute inset-0 bg-amber-400/5 blur-[120px] rounded-full" />
                         <div className="relative aspect-square max-w-md mx-auto flex items-center justify-center p-12 border border-white/5 rounded-[3rem] bg-slate-900/40 backdrop-blur-3xl shadow-2xl">
-                            <img src="/logo.png" alt="Elena Gray Signature" className="w-full h-auto drop-shadow-[0_0_30px_rgba(251,191,36,0.2)]" />
+                            <img src="logo.png" alt="Elena Gray Signature" className="w-full h-auto drop-shadow-[0_0_30px_rgba(251,191,36,0.2)]" />
                         </div>
                     </div>
 

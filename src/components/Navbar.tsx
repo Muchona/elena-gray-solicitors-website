@@ -113,7 +113,7 @@ const Navbar = () => {
                     {/* Interior Header */}
                     <div className="flex items-center justify-between px-6 py-6 border-b border-white/5">
                         <div className="flex items-center gap-3">
-                            <img src="/elena_logo.png" alt="Branding" className="h-8 w-auto opacity-80" />
+                            <img src="elena_logo.png" alt="Branding" className="h-8 w-auto opacity-80" />
                             <div className="flex flex-col border-l border-white/10 pl-3">
                                 <span className="text-sm font-bold text-white tracking-tight">Elena Gray</span>
                                 <span className="text-[7px] font-black tracking-[0.3em] uppercase text-amber-500">Solicitors</span>

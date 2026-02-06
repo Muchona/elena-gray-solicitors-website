@@ -59,7 +59,7 @@ const WillsProbate = () => {
                         {
                             title: "Bespoke Will Drafting",
                             desc: "Tailored wills that clearly articulate your wishes, ensuring your assets are distributed exactly as you intend.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Standard wills often fail to address complex family structures or assets. We draft bespoke wills that account for your specific circumstances, providing absolute clarity on your wishes.</p>
@@ -70,7 +70,7 @@ const WillsProbate = () => {
                         {
                             title: "Probate & Administration",
                             desc: "Relieving the burden of estate administration during difficult times. Efficient handling of probate formalities.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">The loss of a loved one is difficult enough without the stress of legal paperwork. We handle the entire probate process, from valuing the estate and paying inheritance tax to distributing assets to beneficiaries.</p>
@@ -81,7 +81,7 @@ const WillsProbate = () => {
                         {
                             title: "Inheritance Tax Planning",
                             desc: "Strategic advice to maximize the value of the legacy you leave behind.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Effective tax planning is essential to preserve your wealth for future generations. We advise on lawful strategies to mitigate Inheritance Tax liability, including lifetime gifting and the use of exemptions.</p>
@@ -92,7 +92,7 @@ const WillsProbate = () => {
                         {
                             title: "Lasting Powers of Attorney",
                             desc: "Appointing trusted individuals to make decisions on your behalf should you become unable to do so.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Illness or injury can happen at any age. A Lasting Power of Attorney ensures that someone you trust can manage your financial affairs and health decisions if you lose mental capacity.</p>
@@ -103,7 +103,7 @@ const WillsProbate = () => {
                         {
                             title: "Contested Wills & Probate",
                             desc: "Resolving disputes over the validity of wills or the administration of estates.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Disputes over inheritance can tear families apart. Whether you are challenging the validity of a will or defending a claim against an estate, we provide robust representation.</p>
@@ -114,7 +114,7 @@ const WillsProbate = () => {
                         {
                             title: "Trusts & Asset Protection",
                             desc: "Creating trusts to protect assets for vulnerable beneficiaries or future generations.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Trusts are a powerful tool for controlling how your assets are used. We set up and manage trusts to protect money for children, vulnerable adults, or to preserve family wealth.</p>

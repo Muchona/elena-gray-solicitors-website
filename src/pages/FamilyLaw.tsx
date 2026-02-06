@@ -60,7 +60,7 @@ const FamilyLaw = () => {
                         {
                             title: "Divorce & High-Net-Worth Separation",
                             desc: "Complex separation cases requiring forensic attention to assets, business valuations, and international property.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Divorce is rarely simple, especially when significant assets are involved. We specialize in high-net-worth separations that require forensic attention to business valuations, international property portfolios, and trust structures.</p>
@@ -71,7 +71,7 @@ const FamilyLaw = () => {
                         {
                             title: "Child Custody & Arrangements",
                             desc: "Prioritizing the welfare of children in disputes, ensuring stable and loving arrangements for the future.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">The welfare of your children is paramount. We provide sensitive, strategic advice on residence and contact arrangements, always aiming to resolve disputes constructively without unnecessary conflict.</p>
@@ -82,7 +82,7 @@ const FamilyLaw = () => {
                         {
                             title: "Financial Settlements & Asset Protection",
                             desc: "Securing your financial future through meticulous negotiation and robust protection of pre-marital assets.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Financial independence is the cornerstone of your post-separation life. We are experts in unravelling complex financial ties and ensuring that non-matrimonial assets are ring-fenced where appropriate.</p>
@@ -93,7 +93,7 @@ const FamilyLaw = () => {
                         {
                             title: "Prenuptial & Postnuptial Agreements",
                             desc: "Pragmatic wealth planning for couples, providing clarity and peace of mind before or during marriage.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">A prenuptial agreement is a prudent form of insurance for your assets. We draft watertight agreements that provide clarity and peace of mind, tailored to the specific needs of modern couples and blended families.</p>
@@ -104,7 +104,7 @@ const FamilyLaw = () => {
                         {
                             title: "Cohabitation Disputes",
                             desc: "Legal clarity for unmarried couples. Resolving property ownership and financial claims upon separation.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">The law for unmarried couples is vastly different from divorce law. We guide you through the complexities of TOLATA claims and property disputes, ensuring your investment in a shared home is recognized.</p>
@@ -115,7 +115,7 @@ const FamilyLaw = () => {
                         {
                             title: "Domestic Violence & Injunctions",
                             desc: "Urgent legal protection for victims of abuse. Securing Non-Molestation and Occupation Orders swiftly.",
-                            img: "/logo_refined.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Your safety is our priority. We act with urgency to secure Non-Molestation and Occupation Orders to protect you and your children from domestic abuse or harassment.</p>
