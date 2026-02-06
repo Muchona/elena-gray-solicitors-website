@@ -29,7 +29,7 @@ const Home = () => {
                 {/* Full Image Background */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/hero.png"
+                        src="hero.png"
                         alt="Elena Gray Background"
                         className="hero-bg w-full h-full object-cover object-[60%_center] md:object-center mix-blend-luminosity brightness-[0.8] contrast-[1.1] scale-100 md:scale-105"
                     />

@@ -29,7 +29,7 @@ const FamilyLaw = () => {
             <header className="relative py-16 md:py-32 px-6 md:px-8 flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/injury_bg.png"
+                        src="injury_bg.png"
                         alt="Background"
                         className="w-full h-full object-cover opacity-90 scale-105"
                     />

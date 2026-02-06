@@ -6,7 +6,7 @@ const Footer = () => {
         <footer id="contact" className="px-6 md:px-8 pt-24 md:pt-32 pb-16 bg-[#010310] border-t border-white/5 relative z-10">
             <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-24 md:mb-32 text-left">
                 <div className="col-span-2 lg:col-span-1 flex flex-col items-start md:items-center text-left md:text-center mb-12 lg:mb-0">
-                    <img src="/logo.png" alt="Elena Gray Logo" className="h-28 w-auto mb-8 drop-shadow-[0_0_25px_rgba(251,191,36,0.3)] hover:scale-105 transition-transform duration-500" />
+                    <img src="logo.png" alt="Elena Gray Logo" className="h-28 w-auto mb-8 drop-shadow-[0_0_25px_rgba(251,191,36,0.3)] hover:scale-105 transition-transform duration-500" />
                     <p className="text-slate-500 text-sm leading-relaxed mb-8 font-light max-w-xs lg:mx-auto">
                         Compassionate guidance and professional excellence for individuals and businesses across the globe.
                     </p>

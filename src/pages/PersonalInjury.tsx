@@ -29,7 +29,7 @@ const PersonalInjury = () => {
             <header className="relative py-16 md:py-32 px-6 md:px-8 flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/injury_bg.png"
+                        src="injury_bg.png"
                         alt="Background"
                         className="w-full h-full object-cover opacity-90 scale-105"
                     />
@@ -60,7 +60,7 @@ const PersonalInjury = () => {
                         {
                             title: "Slips, Trips & Falls",
                             desc: "Public or private spaces, we're skilled in securing compensation for injuries resulting from slips, trips, and falls.",
-                            img: "/illustration_slips.png",
+                            img: "illustration_slips.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">From supermarket spills to poorly maintained public pavements, we specialize in trip-and-fall claims. Whether your accident happened on private property or a public walkway, we help identify the responsible party and hold them accountable.</p>
@@ -77,7 +77,7 @@ const PersonalInjury = () => {
                         {
                             title: "Road Traffic Accidents",
                             desc: "From minor collisions to major crashes, our solicitors are here to guide you through every step of your claim.",
-                            img: "/illustration_traffic.png",
+                            img: "illustration_traffic.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Proving liability in road traffic accidents requires precision and swift action. Our team specializes in gathering critical evidence—from dashcam footage and witness statements to Garda reports and forensic vehicle analysis.</p>
@@ -94,7 +94,7 @@ const PersonalInjury = () => {
                         {
                             title: "Cycling Accidents",
                             desc: "Specialised legal support for cyclists and motorcyclists injured on the road.",
-                            img: "/illustration_cycling.png",
+                            img: "illustration_cycling.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Cyclists are among the most vulnerable road users. Even with the right gear, a collision with a motor vehicle or a fall caused by poorly maintained road surfaces can result in devastating injuries.</p>

@@ -36,7 +36,7 @@ const Navbar = () => {
                     }}
                     className="nav-item flex items-center gap-3 md:gap-5 shrink-0 z-[110]"
                 >
-                    <img src="/elena_logo.png" alt="Elena Gray Logo" className="h-10 md:h-14 w-auto drop-shadow-lg" />
+                    <img src="elena_logo.png" alt="Elena Gray Logo" className="h-10 md:h-14 w-auto drop-shadow-lg" />
                     <div className="flex flex-col border-l border-white/10 pl-3 md:pl-5">
                         <span className="text-base md:text-xl font-bold tracking-tight text-white leading-tight">Elena Gray</span>
                         <span className="text-[8px] md:text-[9px] font-black tracking-[0.4em] uppercase text-amber-500">Solicitors</span>
