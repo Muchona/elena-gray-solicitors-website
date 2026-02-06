@@ -11,10 +11,20 @@ const Footer = () => {
                         Compassionate guidance and professional excellence for individuals and businesses across the globe.
                     </p>
                     <div className="flex gap-5 justify-start md:justify-center">
-                        {[Facebook, Instagram, Twitter].map((Icon, i) => (
-                            <div key={i} className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-white/10 transition-all cursor-pointer">
+                        {[
+                            { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61573097708251" },
+                            { Icon: Instagram, href: "https://www.instagram.com/elenagraysolicitor/" },
+                            { Icon: Twitter, href: "#" }
+                        ].map(({ Icon, href }, i) => (
+                            <a
+                                key={i}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-amber-400 hover:bg-white/10 transition-all cursor-pointer"
+                            >
                                 <Icon size={18} />
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
