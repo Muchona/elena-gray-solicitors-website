@@ -16,10 +16,39 @@ const Contact = () => {
         )
     })
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setFormStatus('sending');
-        setTimeout(() => setFormStatus('success'), 1500);
+
+        const form = e.target as HTMLFormElement;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch('https://formspree.io/f/PLACEHOLDER_FORM_ID', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setFormStatus('success');
+                form.reset();
+                setFileName('Attach a file (Optional)');
+            } else {
+                const data = await response.json();
+                if (Object.hasOwn(data, 'errors')) {
+                    alert(data.errors.map((error: any) => error.message).join(", "));
+                } else {
+                    alert("Oops! There was a problem submitting your form");
+                }
+                setFormStatus('idle');
+            }
+        } catch (error) {
+            alert("Oops! There was a problem submitting your form");
+            setFormStatus('idle');
+        }
     }
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -117,22 +146,22 @@ const Contact = () => {
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="space-y-2">
                                                 <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Full Name</label>
-                                                <input required type="text" placeholder="John Doe" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all" />
+                                                <input required name="name" type="text" placeholder="John Doe" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all" />
                                             </div>
                                             <div className="space-y-2">
                                                 <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Phone</label>
-                                                <input required type="tel" placeholder="+353 ..." className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all" />
+                                                <input required name="phone" type="tel" placeholder="+353 ..." className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all" />
                                             </div>
                                         </div>
 
                                         <div className="space-y-2">
                                             <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Email Address</label>
-                                            <input required type="email" placeholder="john@example.com" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all" />
+                                            <input required name="email" type="email" placeholder="john@example.com" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all" />
                                         </div>
 
                                         <div className="space-y-2">
                                             <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Area of Law</label>
-                                            <select className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all appearance-none cursor-pointer">
+                                            <select name="subject" className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all appearance-none cursor-pointer">
                                                 <option className="bg-slate-900">General Enquiry</option>
                                                 <option className="bg-slate-900">Personal Injury</option>
                                                 <option className="bg-slate-900">Medical Negligence</option>
@@ -145,13 +174,13 @@ const Contact = () => {
 
                                         <div className="space-y-2">
                                             <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">How can we help?</label>
-                                            <textarea required rows={4} placeholder="Briefly describe your situation..." className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all resize-none" />
+                                            <textarea required name="message" rows={4} placeholder="Briefly describe your situation..." className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-amber-400 focus:bg-white/10 transition-all resize-none" />
                                         </div>
 
                                         <div className="space-y-2">
                                             <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Attachment</label>
                                             <div className="relative">
-                                                <input type="file" id="file-upload" className="hidden" onChange={handleFileChange} />
+                                                <input type="file" name="attachment" id="file-upload" className="hidden" onChange={handleFileChange} />
                                                 <label htmlFor="file-upload" className="flex items-center justify-between w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-slate-400 cursor-pointer hover:bg-white/10 hover:border-amber-400/50 transition-all group">
                                                     <span className={`truncate ${fileName !== 'Attach a file (Optional)' ? 'text-amber-400 font-medium' : ''}`}>{fileName}</span>
                                                     <Paperclip size={18} className="text-slate-500 group-hover:text-amber-400 transition-colors" />
