@@ -77,7 +77,7 @@ const PersonalInjury = () => {
                         {
                             title: "Road Traffic Accidents",
                             desc: "From minor collisions to major crashes, our solicitors are here to guide you through every step of your claim.",
-                            img: "illustration_traffic.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Proving liability in road traffic accidents requires precision and swift action. Our team specializes in gathering critical evidence—from dashcam footage and witness statements to Garda reports and forensic vehicle analysis.</p>
@@ -94,7 +94,7 @@ const PersonalInjury = () => {
                         {
                             title: "Cycling Accidents",
                             desc: "Specialised legal support for cyclists and motorcyclists injured on the road.",
-                            img: "illustration_cycling.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Cyclists are among the most vulnerable road users. Even with the right gear, a collision with a motor vehicle or a fall caused by poorly maintained road surfaces can result in devastating injuries.</p>
@@ -105,7 +105,7 @@ const PersonalInjury = () => {
                         {
                             title: "Motorbike Accidents",
                             desc: "Specialised legal support for motorcyclists injured on the road.",
-                            img: "illustration_motorbike.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Motorcyclists often face an uphill battle when it comes to liability and 'look but failed to see' accidents. We recognize the skill involved in riding and the severity of injuries when things go wrong.</p>
@@ -116,7 +116,7 @@ const PersonalInjury = () => {
                         {
                             title: "Workplace Accidents",
                             desc: "Suffered an injury at work? We have the expertise to help you navigate through the claims process.",
-                            img: "illustration_workplace.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Every employee has the right to a safe working environment. Accidents in the workplace—whether on a construction site, in a warehouse, or in an office—are often the result of inadequate training, faulty equipment, or a failure to follow safety protocols.</p>
@@ -127,7 +127,7 @@ const PersonalInjury = () => {
                         {
                             title: "Medical Negligence",
                             desc: "Expert advice for medical error cases, handled with sensitivity and professional rigor.",
-                            img: "illustration_slips.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">When we place our trust in medical professionals, we expect a high standard of care. If that standard is not met—whether through surgical error, misdiagnosis, or birth injury—the consequences can be life-changing.</p>
