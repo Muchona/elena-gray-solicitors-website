@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { ReviewProvider } from './context/ReviewContext'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -55,7 +55,7 @@ function App() {
 
   return (
     <ReviewProvider>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <div ref={container} className="min-h-screen bg-[#020617] text-slate-50 font-sans selection:bg-amber-400/30 overflow-x-hidden">
           {/* Dynamic Background */}
@@ -78,7 +78,7 @@ function App() {
           </Routes>
           <Footer />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ReviewProvider>
   )
 }
