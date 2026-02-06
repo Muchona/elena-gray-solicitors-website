@@ -61,7 +61,7 @@ const MedicalNegligence = () => {
                         {
                             title: "Surgical Errors & Complications",
                             desc: "Surgery inherently carries risks, but when complications arise from avoidable mistakes the impact is traumatic.",
-                            img: "illustration_surgical_crop.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Surgery inherently carries risks, but when complications arise from avoidable mistakes—such as wrong-site surgery, foreign objects left behind, or post-operative infections—the impact is traumatic.</p>
@@ -72,7 +72,7 @@ const MedicalNegligence = () => {
                         {
                             title: "GP & Medical Professional Negligence",
                             desc: "Your GP is often your first port of call. When a doctor fails to refer a patient or ignores critical symptoms, the results can be life-altering.",
-                            img: "illustration_gp_crop.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Your GP is often your first port of call for health concerns. When a doctor fails to refer a patient to a specialist, ignores critical symptoms, or provides an incorrect prescription, the results can be life-altering.</p>
@@ -83,7 +83,7 @@ const MedicalNegligence = () => {
                         {
                             title: "Misdiagnosis & Delayed Diagnosis",
                             desc: "Timing is everything. A misdiagnosis or a delay in identifying conditions like cancer can lead to worsened outcomes.",
-                            img: "illustration_misdiagnosis_crop.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Timing is everything in medicine. A misdiagnosis or a delay in identifying conditions like cancer, meningitis, or cardiac issues can lead to worsened outcomes or a loss of treatment options.</p>
@@ -94,7 +94,7 @@ const MedicalNegligence = () => {
                         {
                             title: "Nursing Home & Elder Care Neglect",
                             desc: "Entrusting the care of a vulnerable loved one to a facility is a major decision. Neglect is a profound betrayal of that trust.",
-                            img: "illustration_surgical_crop.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Entrusting the care of a vulnerable loved one to a facility is a major decision. Neglect—such as pressure sores, medication errors, or inadequate supervision—is a profound betrayal of that trust.</p>
@@ -105,7 +105,7 @@ const MedicalNegligence = () => {
                         {
                             title: "Dental & Cosmetic Surgery Malpractice",
                             desc: "While often elective, dental and cosmetic procedures are medical treatments that require high levels of precision.",
-                            img: "illustration_surgical_crop.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">While often elective, dental and cosmetic procedures are medical treatments that require high levels of precision. From nerve damage during dental work to scarring and disfigurement from botched cosmetic enhancements, we represent clients whose confidence and health have been shattered by substandard professional performance.</p>
@@ -115,7 +115,7 @@ const MedicalNegligence = () => {
                         {
                             title: "Birth Injuries & Cerebral Palsy Cases",
                             desc: "Birth should be a time of joy, but medical errors during labor and delivery can lead to lifelong conditions like Cerebral Palsy.",
-                            img: "illustration_surgical_crop.png",
+                            img: "logo_refined.png",
                             detailedContent: (
                                 <>
                                     <p className="mb-4">Birth should be a time of joy, but medical errors during labor and delivery can lead to lifelong conditions like Cerebral Palsy or physical trauma to the mother. These cases are highly sensitive and complex.</p>
