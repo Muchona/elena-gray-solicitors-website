@@ -72,9 +72,18 @@ const Navbar = () => {
                         )}
                     </div>
 
-                    <a href="/#about" className="nav-item text-[10px] font-black tracking-[0.3em] text-slate-400 hover:text-amber-400 transition-colors uppercase">
+                    <Link
+                        to="/"
+                        onClick={(e) => {
+                            if (location.pathname === '/') {
+                                e.preventDefault();
+                                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                        className="nav-item text-[10px] font-black tracking-[0.3em] text-slate-400 hover:text-amber-400 transition-colors uppercase"
+                    >
                         About
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Desktop Call to Action & Mobile Toggle */}
@@ -155,13 +164,19 @@ const Navbar = () => {
                             </div>
 
                             <div className="pt-8 flex flex-col items-center gap-6">
-                                <a
-                                    href="/#about"
-                                    onClick={() => setIsMobileMenuOpen(false)}
+                                <Link
+                                    to="/"
+                                    onClick={(e) => {
+                                        setIsMobileMenuOpen(false);
+                                        if (location.pathname === '/') {
+                                            e.preventDefault();
+                                            document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                                        }
+                                    }}
                                     className="text-xs font-black tracking-[0.5em] uppercase text-slate-500 hover:text-white transition-colors"
                                 >
                                     About Elena
-                                </a>
+                                </Link>
                                 <Link
                                     to="/reviews"
                                     onClick={() => setIsMobileMenuOpen(false)}
