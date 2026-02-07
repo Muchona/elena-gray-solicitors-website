@@ -12,6 +12,23 @@ const Home = () => {
     const container = useRef<HTMLDivElement>(null)
     const scrollContainer = useRef<HTMLDivElement>(null)
 
+    const isOfficeOpen = () => {
+        const now = new Date();
+        const day = now.getDay(); // 0 (Sun) - 6 (Sat)
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const timeValue = hour + minute / 60;
+
+        // Mon-Fri: 09:00 - 17:00
+        if (day >= 1 && day <= 5) {
+            return timeValue >= 9 && timeValue < 17;
+        }
+        // Saturday & Sunday: Closed
+        return false;
+    };
+
+    const officeStatus = isOfficeOpen();
+
     useGSAP(() => {
         // Initial Load
         const tl = gsap.timeline({ defaults: { ease: 'power4.out' } })
@@ -206,33 +223,35 @@ const Home = () => {
                     <div className="relative p-12 md:p-20 bg-slate-950/80 backdrop-blur-3xl rounded-[3.4rem] border border-white/5 overflow-hidden">
                         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
 
-                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div className="relative z-10 flex flex-col items-center">
                             {/* Text Content */}
-                            <div className="text-left">
-                                <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-[0.95]">
+                            <div className="text-center mb-12 max-w-3xl">
+                                <h2 className="text-4xl md:text-7xl font-black tracking-tighter mb-8 leading-[0.95]">
                                     Experience the Future of <br />Legal Services.
                                 </h2>
-                                <p className="text-slate-400 text-lg mb-12 max-w-xl">
+                                <p className="text-slate-400 text-lg md:text-xl mb-12">
                                     Discover Elena's personal dedication and professional insight in our digital introduction. Watch how we combine compassionate care with legal excellence.
                                 </p>
-                                <div className="flex items-center gap-4 text-amber-400 font-bold uppercase tracking-widest text-xs">
-                                    <div className="w-12 h-[1px] bg-amber-400"></div>
-                                    Watch Introduction
-                                </div>
                             </div>
 
-                            {/* Video Container */}
-                            <div className="relative w-full max-w-[500px] lg:mx-0 mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-900 bg-slate-900 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500 aspect-video">
+                            {/* Video Container - Responsive & Horizontal */}
+                            <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10 bg-slate-900 group/video transition-all duration-700">
                                 <iframe
                                     src="https://www.facebook.com/plugins/video.php?height=281&href=https%3A%2F%2Fwww.facebook.com%2F61573097708251%2Fvideos%2F923408323264242%2F&show_text=false&width=500&t=0"
                                     width="100%"
                                     height="100%"
-                                    style={{ border: 'none', overflow: 'hidden' }}
+                                    style={{ border: 'none', overflow: 'hidden', position: 'absolute', top: 0, left: 0 }}
                                     scrolling="no"
-                                    frameBorder="0"
                                     allowFullScreen={true}
                                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                                 ></iframe>
+                                <div className="absolute inset-0 pointer-events-none border border-white/5 rounded-3xl z-10"></div>
+                            </div>
+
+                            <div className="mt-12 flex items-center gap-4 text-amber-400 font-bold uppercase tracking-widest text-xs">
+                                <div className="w-12 h-[1px] bg-amber-400"></div>
+                                Digital Introduction
+                                <div className="w-12 h-[1px] bg-amber-400"></div>
                             </div>
                         </div>
 
@@ -282,10 +301,17 @@ const Home = () => {
                                     <span className="text-slate-600 font-bold">Closed</span>
                                 </div>
                             </div>
-                            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-[10px] font-black tracking-widest uppercase">
-                                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                                Open Now
-                            </div>
+                            {officeStatus ? (
+                                <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-[10px] font-black tracking-widest uppercase shadow-[0_0_15px_rgba(16,185,129,0.1)]">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                                    Open Now
+                                </div>
+                            ) : (
+                                <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/20 rounded-full text-red-400 text-[10px] font-black tracking-widest uppercase shadow-[0_0_15px_rgba(239,68,68,0.1)]">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                                    Closed
+                                </div>
+                            )}
                         </div>
 
                         {/* Location */}
