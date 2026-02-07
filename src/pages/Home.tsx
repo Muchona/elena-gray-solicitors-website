@@ -234,10 +234,10 @@ const Home = () => {
                                 </p>
                             </div>
 
-                            {/* Video Container - Responsive & Horizontal */}
-                            <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10 bg-slate-900 group/video transition-all duration-700">
+                            {/* Video Container - Reel Format (Vertical) */}
+                            <div className="relative w-full max-w-[320px] md:max-w-[400px] aspect-[9/16] rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/10 bg-slate-900 group/video transition-all duration-700 mx-auto">
                                 <iframe
-                                    src="https://www.facebook.com/plugins/video.php?height=281&href=https%3A%2F%2Fwww.facebook.com%2F61573097708251%2Fvideos%2F923408323264242%2F&show_text=false&width=500&t=0"
+                                    src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F61573097708251%2Fvideos%2F923408323264242%2F&show_text=false&t=0"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 'none', overflow: 'hidden', position: 'absolute', top: 0, left: 0 }}
