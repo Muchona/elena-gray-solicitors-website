@@ -220,16 +220,16 @@ const Home = () => {
             {/* Video CTA Section */}
             <section className="reveal-section px-8 py-32 max-w-7xl mx-auto">
                 <div className="reveal-item relative p-1 bg-gradient-to-tr from-amber-400/20 via-transparent to-teal-500/20 rounded-[3.5rem] overflow-hidden group">
-                    <div className="relative p-12 md:p-20 bg-slate-950/80 backdrop-blur-3xl rounded-[3.4rem] border border-white/5 overflow-hidden">
+                    <div className="relative p-6 md:p-20 bg-slate-950/80 backdrop-blur-3xl rounded-[3.4rem] border border-white/5 overflow-hidden">
                         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
 
                         <div className="relative z-10 flex flex-col items-center">
                             {/* Text Content */}
-                            <div className="text-center mb-12 max-w-3xl">
+                            <div className="text-center mb-12 w-full">
                                 <h2 className="text-4xl md:text-7xl font-black tracking-tighter mb-8 leading-[0.95]">
                                     Experience the Future of <br />Legal Services.
                                 </h2>
-                                <p className="text-slate-400 text-lg md:text-xl mb-12">
+                                <p className="text-slate-400 text-lg md:text-xl mb-12 max-w-3xl mx-auto">
                                     Discover Elena's personal dedication and professional insight in our digital introduction. Watch how we combine compassionate care with legal excellence.
                                 </p>
                             </div>
