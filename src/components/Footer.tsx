@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import OnyxBadge from './OnyxBadge'
 
 const Footer = () => {
     return (
@@ -67,23 +68,18 @@ const Footer = () => {
                             <Mail className="text-amber-400 flex-shrink-0" size={18} />
                             <span className="text-sm text-slate-400">info@graysolicitors.ie</span>
                         </div>
+                        <div className="pt-4">
+                            <OnyxBadge />
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-between border-t border-white/5 pt-10 gap-6">
                 <div className="flex flex-col items-center md:items-start gap-2">
-                    <div className="text-[10px] font-mono tracking-[0.3em] text-slate-700 uppercase italic">
+                    <div className="text-[10px] font-mono tracking-[0.3em] text-slate-700 uppercase italic mb-4">
                         ELENA GRAY SOLICITORS // ALL_RIGHTS_RESERVED // SYSTEM_CORE_v1.5
                     </div>
-                    <a
-                        href="https://www.onyxandcode.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[9px] font-mono tracking-[0.2em] text-amber-500/40 hover:text-amber-500 transition-colors uppercase"
-                    >
-                        Designed by Onyx & Code team // onyxandcode.com
-                    </a>
                 </div>
                 <div className="flex gap-8 text-[10px] font-mono tracking-[0.1em] text-slate-700 uppercase">
                     <a href="#" className="hover:text-slate-500">Privacy Policy</a>
